@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Coda|Monda|Pragati+Narrow|Rajdhani" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/my.css">
+
+</head>
+<body>
+<header>
+		<div class="content">
+			<div class="logo">
+				<img src = 'img/pop.png' height= 50px>
+			</div>
+
+
+			<ul class="menu">
+				<li>HOME</li>
+				<li>FORUM</li>
+			<li>MEMES</li>
+		</ul>
+
+
+
+
+		<ul class="menu1">
+			<li style="margin-top: 9px">Login</li>
+			<div class="searchbar">
+				<form action="#">
+					<button id="close" onclick="hilangkan_anu();">X</button>
+					<input type="text" class="searchtxt" name="search" id="text">
+					<!-- <input type="submit" value="cari" id="btn"> -->
+					<ul onclick="tampilkan_anu();" class="menu1" ><li>Search</li></ul>
+				</form>	
+			</div>
+		</ul>
+	</header>
+	<div class="sidebar-kiri">
+		<div class="container">
+			<div class="p">
+				TIPS:
+				<p>Ketik nama artis/kata kunci untuk mempermudahkan anda mencari berita.</p>
+
+				<div class="keempat">
+					<h4> TOP THREAD :
+						<ul class="top-thread">
+							<li><a href="Menu 1.html">BoA Pamer Hadiah yang Ia Terima dari Wanna One </a></li>
+							<li><a href="Menu 2.html"></a></li>
+							<li><a href="Menu 3.html">Song Joong Ki dan Song Hye Kyo Ungkap Foto-foto Pernikahan Nan Cantik  </a></li>
+							<li><a href="Menu 2.html"></a></li>
+							<li><a href="Menu 1.html">BoA Pamer Hadiah yang Ia Terima dari Wanna One </a></li>
+							<li><a href="Menu 2.html"></a></li>
+							<li><a href="Menu 3.html">Song Joong Ki dan Song Hye Kyo Ungkap Foto-foto Pernikahan Nan Cantik  </a></li>
+						</ul>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="utama">
+		<div class="h2">
+		 <form>
+		 	<input placeholder="Username" type="text"/>
+      		<input placeholder="Password" type="password"/>
+      		<button class="btn">Log in</button>
+      		<li></li>
+		 	<li>Create New Account :</li>
+            <li>First Name  <input type="text" name="nama"></li><br>
+            <li>Last Name  <input type="text" name="nama"></li><br>
+            <li>Email <input type="text" name="NIM"></li> <br>
+      		<li>Password <input placeholder="Password" type="password"/></li>
+      		<li></li>
+      		<li>Confirm password <input placeholder="Password" type="password"/></li>
+      		<li></li>
+      		<button class="btn">SIGN IN</button>
+            
+        </form>
+	</div>
+
+	<script type="text/javascript">
+		var anu = document.getElementById('text');
+		var anu2 = document.getElementById('close');
+		function tampilkan_anu(){
+			anu.style.display = "inline";
+			anu2.style.display = "inline";
+		}
+		function hilangkan_anu(){
+			anu.style.display = "none";
+			anu2.style.display = "none";
+		}
+
+	</script>
+
+</body>
+</html>
